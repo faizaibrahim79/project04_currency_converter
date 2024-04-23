@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 
@@ -36,7 +37,8 @@ let user_answer = await inquirer.prompt([
 // Perform currency conversion by using formula
 let fromAmount = exchange_rate[user_answer.from]
 let toAmount = exchange_rate[user_answer.to]
-let Amount = user_answer.amount
+let Amount
+ = user_answer.amount
 
 // formula of conversion
 let baseAmount = Amount/fromAmount
