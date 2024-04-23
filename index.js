@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 import chalk from "chalk";
 console.log(chalk.green.bold("\n \t Welcome to 'FAIZA FAIZAN'-Currency Converter\n"));
